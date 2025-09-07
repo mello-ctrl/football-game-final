@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚽ Penalty Shootout Game ⚽</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>⚽ Penalty Shootout Game ⚽</h1>
+
+  <!-- Player name input -->
+  <div>
+    <label for="playerName">Enter your name: </label>
+    <input type="text" id="playerName" placeholder="Your name">
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <p id="score">Score: 0</p>
+  <p id="shots">Shots left: 5</p>
+
+  <div class="field">
+    <div id="goal">
+      <div id="goalkeeper">🧤</div>
+    </div>
+    <div id="ball">⚽</div>
+  </div>
+
+  <button id="shootBtn" onclick="shoot()" disabled>Shoot!</button>
+  <button onclick="restart()">Restart Game</button>
+  <p id="message"></p>
+
+  <h2>🏆 Leaderboard</h2>
+  <ol id="leaderboard"></ol>
+  <button onclick="clearLeaderboard()">Clear Leaderboard</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
